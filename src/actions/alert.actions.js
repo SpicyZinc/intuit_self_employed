@@ -21,5 +21,5 @@ function error(message) {
 }
 
 function clear() {
-    return 
+    return {
 }
