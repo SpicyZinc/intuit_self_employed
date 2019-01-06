@@ -37,7 +37,7 @@ export class RegisterPage extends Component {
         });
         const {username, password} = this.state;
         if (username && password) {
-            this.props.dispatch(userActions.register(u));
+            this.props.dispatch(userActions.register(username));
         }
     }
 
