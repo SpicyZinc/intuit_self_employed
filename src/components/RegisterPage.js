@@ -74,7 +74,7 @@ export class RegisterPage extends Component {
 // complete the below function
 function mapStateToProps(state) {
     return {
-        registration
+        registration: stat
     }
 }
 
