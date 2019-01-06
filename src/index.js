@@ -12,6 +12,7 @@ configureFakeAPI();
 const TheApp = () => (
 
 );
+
 render(
     <App />, document.getElementById('app')
 );
