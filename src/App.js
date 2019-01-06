@@ -47,4 +47,4 @@ const mapDispatchToProps = (dispatch) => ({
     
 });
 
-export connect()(App)
+export connect()(App);
