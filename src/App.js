@@ -29,7 +29,7 @@ export class App extends React.Component {
         return (
               <div className="container">
                   <div className="col-sm-8 col-sm-offset-2">
-                              <LoginPage />
+                              
                   </div>
               </div>
         );
