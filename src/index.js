@@ -11,6 +11,7 @@ configureFakeAPI();
 
 const TheApp = () => (
     <Provider store={store}>
+    
 );
 
 render(
