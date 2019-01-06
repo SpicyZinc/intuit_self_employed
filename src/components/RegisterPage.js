@@ -33,7 +33,7 @@ export class RegisterPage extends Component {
         event.preventDefault();
         
         this.setState({
-            submitted: t
+            submitted: true
         });
     }
 
