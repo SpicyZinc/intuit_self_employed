@@ -19,7 +19,9 @@ function login(username, password) {
                 dispatch(success(user));
                 history.push('/');
             })
-            .catch(() => {});
+            .catch(() => {
+                
+            });
     };
 
     function request(user) { return { type: userConstants.LOGIN_REQUEST, user } }
