@@ -22,7 +22,7 @@ export class LoginPage extends Component {
     }
 
     handleChange(e) {
-        this.setSta
+        this.setState();
     }
 
     handleSubmit(e) {
