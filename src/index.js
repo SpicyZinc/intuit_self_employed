@@ -11,10 +11,10 @@ configureFakeAPI();
 
 const TheApp = () => (
     <Provider store={store}>
-        <App />
+        <App >
     </Provider>
 );
 
 render(
-    < />, document.getElementById('app')
+    <TheApp />, document.getElementById('app')
 );
