@@ -24,7 +24,7 @@ export class RegisterPage extends Component {
     handleChange(event) {
         // handle input change and dispatch register
         this.setState({
-            username: event.ta
+            username: event.target
         });
     }
 
