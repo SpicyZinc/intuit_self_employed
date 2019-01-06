@@ -23,6 +23,7 @@ export class RegisterPage extends Component {
 
     handleChange(event) {
         // handle input change and dispatch register
+
     }
 
     handleSubmit(event) {
