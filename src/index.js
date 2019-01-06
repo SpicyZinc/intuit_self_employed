@@ -13,7 +13,6 @@ const TheApp = () =>
     <Provider store={store}>
         <App />
     </Provider>
-);
 
 render(
     <TheApp />, document.getElementById('app')
