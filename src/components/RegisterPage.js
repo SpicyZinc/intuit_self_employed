@@ -35,7 +35,7 @@ export class RegisterPage extends Component {
         this.setState({
             submitted: true
         });
-        const 
+        const {}
         if ()
     }
 
