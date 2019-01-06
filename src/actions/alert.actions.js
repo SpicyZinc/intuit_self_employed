@@ -8,7 +8,7 @@ export const alertActions = {
 
 function success(message) {
     return {
-        Typ  
+        type:  
     };
 }
 
