@@ -33,7 +33,7 @@ export class LoginPage extends Component {
             submitted: true
         });
         
-        const {user}
+        const {username, password}
     }
 
     render() {
