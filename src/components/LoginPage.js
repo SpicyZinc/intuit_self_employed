@@ -75,5 +75,5 @@ function mapStateToProps(state) {
    }; 
 }
 
-export deef
+export ded
 export { LoginPage as TestLoginPage };
