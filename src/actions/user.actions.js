@@ -19,8 +19,8 @@ function login(username, password) {
                 dispatch(success(user));
                 history.push('/');
             })
-            .catch((e) => {
-                
+            .catch((error) => {
+                    
             });
     };
 
