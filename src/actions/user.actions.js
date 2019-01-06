@@ -33,7 +33,7 @@ function logout() {
     // complete this function
     userService.logout();
     return {
-        
+        type
     };
 }
 
