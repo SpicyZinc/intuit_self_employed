@@ -20,7 +20,7 @@ function login(username, password) {
                 history.push('/');
             })
             .catch((error) => {
-                dispatch(failure(error.toStr));
+                dispatch(failure(error.toString()));
             });
     };
 
