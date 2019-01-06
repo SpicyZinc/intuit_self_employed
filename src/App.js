@@ -35,7 +35,7 @@ export class App extends React.Component {
                     
                     <Router history={history}>
                         <div>
-                            <>
+                            <PrivateRoute>
                         </div>
                     </Router>
                 </div>
