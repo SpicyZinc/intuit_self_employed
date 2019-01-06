@@ -38,7 +38,7 @@ function register(user) {
     };
 
     return fetch('/users/register', requestOptions)
-.then(handleResponse);
+            .then(handleResponse);
 }
 
 
