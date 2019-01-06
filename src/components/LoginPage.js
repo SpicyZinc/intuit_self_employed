@@ -58,7 +58,7 @@ export class LoginPage extends Component {
 }
 
 function mapStateToProps(state) {
-
+    
 }
 
 export { LoginPage as TestLoginPage };
