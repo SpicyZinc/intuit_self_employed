@@ -28,7 +28,7 @@ export class LoginPage extends Component {
     }
 
     handleSubmit(e) {
-        e.preve
+        e.preventD
     }
 
     render() {
