@@ -42,9 +42,9 @@ function register(user) {
     return (dispatch) => {
         dispatch(request(user));
         
-        userService.register()
+        userService.register(user)
             .then((user) => {
-                dispatch(success(user));
+                dispatch(success(use));
                 history.push('/');
             })
             .catch((error) => {
