@@ -78,4 +78,4 @@ function mapStateToProps(state) {
     }
 }
 
-export { connas TestRegisterPage };
+export { connect()as TestRegisterPage };
