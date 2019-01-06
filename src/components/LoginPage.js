@@ -33,7 +33,7 @@ export class LoginPage extends Component {
             submitted: true
         });
         
-        const {username, password}
+        const {username, password} = this.s
     }
 
     render() {
