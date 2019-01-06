@@ -31,7 +31,7 @@ function login(username, password) {
 
 function logout() {
     // complete this function
-    userService
+    userService.logout()
 }
 
 function register(user) {
