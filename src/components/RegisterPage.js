@@ -36,7 +36,9 @@ export class RegisterPage extends Component {
             submitted: true
         });
         const {username, password} = this.state;
-        if (username && password) 
+        if (username && password) {
+            
+        }
     }
 
     render() {
