@@ -32,7 +32,9 @@ export class RegisterPage extends Component {
         // handle button click and dispatch register
         event.preventDefault();
         
-        this.setState();
+        this.setState({
+            subm
+        });
     }
 
     render() {
