@@ -9,7 +9,7 @@ import { configureFakeAPI } from './helpers';
 
 configureFakeAPI();
 
-const
+const A
 render(
     <App />, document.getElementById('app')
 );
