@@ -3,7 +3,7 @@ import {
     Router,
     Route,
     Link,
-    NavLin
+    NavLink
 } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { PrivateRoute } from './PrivateRoute.js';
