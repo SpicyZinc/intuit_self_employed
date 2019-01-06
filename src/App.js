@@ -5,7 +5,7 @@ import {
     Link,
     NavLink,
     Switch,
-    Re
+    Redirect
 } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { PrivateRoute } from './PrivateRoute.js';
