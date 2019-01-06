@@ -30,7 +30,7 @@ export class LoginPage extends Component {
     handleSubmit(e) {
         e.preventDefault();
         this.setState({
-            subm
+            submitted: true
         });
     }
 
