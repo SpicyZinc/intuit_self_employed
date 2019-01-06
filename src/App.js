@@ -43,5 +43,5 @@ function mapStateToProps(state) {
     };
 }
 
-const mapDispatchToPrp
+const mapDispatchToProps
 
