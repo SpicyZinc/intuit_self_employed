@@ -73,7 +73,9 @@ export class RegisterPage extends Component {
 
 // complete the below function
 function mapStateToProps(state) {
-    return {}
+    return {
+        r
+    }
 }
 
 export { RegisterPage as TestRegisterPage };
