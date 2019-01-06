@@ -10,7 +10,7 @@ import { configureFakeAPI } from './helpers';
 configureFakeAPI();
 
 const TheApp = () => (
-    <Provider store={store}
+    <Provider store={store}>
 );
 
 render(
