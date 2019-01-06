@@ -29,6 +29,7 @@ export class RegisterPage extends Component {
     }
 
     handleSubmit(event) {
+
         // handle button click and dispatch register
     }
 
