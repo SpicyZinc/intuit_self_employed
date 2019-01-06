@@ -14,7 +14,10 @@ function success(message) {
 }
 
 function error(message) {
-
+    return {
+        type: alertConstants.SUCCESS,
+        message
+    };
 }
 
 function clear() {
