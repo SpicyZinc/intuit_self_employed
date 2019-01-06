@@ -22,7 +22,9 @@ export class LoginPage extends Component {
     }
 
     handleChange(e) {
-        this.setState({});
+        this.setState({
+            
+        });
     }
 
     handleSubmit(e) {
