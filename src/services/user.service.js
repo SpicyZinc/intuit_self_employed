@@ -15,7 +15,7 @@ function login(username, password) {
     return fetch('/users/authenticate')
             .then((user) => {
                 if (user.id) {
-                    localStorage.setItem('user', J);
+                    localStorage.setItem('user', JSON.str);
                 }
             });
     
