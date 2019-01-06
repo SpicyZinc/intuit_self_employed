@@ -30,7 +30,8 @@ export class RegisterPage extends Component {
 
     handleSubmit(event) {
         // handle button click and dispatch register
-        event.preventDefault
+        event.preventDefault();
+        
     }
 
     render() {
