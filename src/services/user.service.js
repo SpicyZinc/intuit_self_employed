@@ -17,6 +17,7 @@ function login(username, password) {
                 if (user.id) {
                     localStorage.setItem('user', JSON.stringify(user));
                 }
+
             });
     
 }
