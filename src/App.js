@@ -32,6 +32,7 @@ export class App extends React.Component {
                     {
                         alert.message && <div className={`alert ${alert.type}`}>{alert.message}</div>
                     }
+                    <
                 </div>
             </div>
         );
