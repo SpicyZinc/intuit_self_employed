@@ -7,7 +7,7 @@ export const alertActions = {
 };
 
 function success(message) {
-    r
+    return 
 }
 
 function error(message) {
