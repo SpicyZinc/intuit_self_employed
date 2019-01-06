@@ -9,9 +9,9 @@ import { configureFakeAPI } from './helpers';
 
 configureFakeAPI();
 
-const TheApp =(
-    )
 
 render(
-    , document.getElementById('app')
+    <Provider store={store}>
+        <App />
+    </Provider>, document.getElementById('app')
 );
