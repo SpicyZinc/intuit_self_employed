@@ -15,7 +15,9 @@ function login(username, password) {
         dispatch(request({username}));
         
         userService.login(username, password)
-            .then(() => {});
+            .then(() => {
+                
+            });
     };
 
     function request(user) { return { type: userConstants.LOGIN_REQUEST, user } }
