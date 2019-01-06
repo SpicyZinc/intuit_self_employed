@@ -16,7 +16,7 @@ function login(username, password) {
         
         userService.login(username, password)
             .then((user) => {
-                dispatch(success(us));  
+                dispatch(success(user));  
             });
     };
 
