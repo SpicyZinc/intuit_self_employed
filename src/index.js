@@ -13,5 +13,5 @@ const TheApp =(
     )
 
 render(
-    <TheApp />, document.getElementById('app')
+    , document.getElementById('app')
 );
