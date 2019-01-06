@@ -71,7 +71,7 @@ export class LoginPage extends Component {
 
 function mapStateToProps(state) {
    return {
-       login
+       loging
    }; 
 }
 
