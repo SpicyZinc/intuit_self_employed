@@ -31,6 +31,7 @@ function login(username, password) {
 
 function logout() {
     // complete this function
+
 }
 
 function register(user) {
