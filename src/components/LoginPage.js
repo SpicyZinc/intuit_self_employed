@@ -75,5 +75,5 @@ function mapStateToProps(state) {
    }; 
 }
 
-export de
+export 
 export { LoginPage as TestLoginPage };
