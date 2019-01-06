@@ -19,7 +19,7 @@ function login(username, password) {
                 dispatch(success(user));
                 history.push('/');
             })
-            .catch(() => {
+            .catch((e) => {
                 
             });
     };
