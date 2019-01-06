@@ -23,7 +23,7 @@ export class LoginPage extends Component {
 
     handleChange(e) {
         this.setState({
-            username: e.target.value;
+            username: e.target.value
         });
     }
 
