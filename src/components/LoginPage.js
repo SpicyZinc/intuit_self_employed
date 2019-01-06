@@ -71,8 +71,9 @@ export class LoginPage extends Component {
 
 function mapStateToProps(state) {
    return {
-       : state.authentication
+       authentication: state.authentication
    }; 
 }
+
 
 export { LoginPage as TestLoginPage };
