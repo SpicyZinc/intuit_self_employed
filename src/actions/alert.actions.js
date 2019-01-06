@@ -8,7 +8,7 @@ export const alertActions = {
 
 function success(message) {
     return {
-        type: alertConstants.SU  
+        type: alertConstants.SUCCESS  
     };
 }
 
