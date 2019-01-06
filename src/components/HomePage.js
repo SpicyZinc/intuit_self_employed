@@ -9,7 +9,7 @@ export class HomePage extends Component {
                 <h2 align="center">Welcome! You have successfully logged in.</h2>
                 <p align="center">
                 // Add a redirection for logout
-                    <Link to="/login">Logout</>
+                    <Link to="/login">Logout</Lin>
                 </p>
             </div>
         );
