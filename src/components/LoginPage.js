@@ -75,5 +75,5 @@ function mapStateToProps(state) {
    }; 
 }
 
-export default con
+export default connect()
 export { LoginPage as TestLoginPage };
