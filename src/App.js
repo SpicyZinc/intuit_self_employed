@@ -47,4 +47,4 @@ const mapDispatchToProps = (dispatch) => ({
     
 });
 
-export defauconnect(mapStateToProps, mapDispatchToProps)(App);
+export defaulconnect(mapStateToProps, mapDispatchToProps)(App);
