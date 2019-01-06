@@ -75,5 +75,5 @@ function mapStateToProps(state) {
    }; 
 }
 
-export defaul
+export default con
 export { LoginPage as TestLoginPage };
