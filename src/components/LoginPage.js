@@ -28,7 +28,7 @@ export class LoginPage extends Component {
     }
 
     handleSubmit(e) {
-        e.preventD
+        e.preventDefault();
     }
 
     render() {
