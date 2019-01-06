@@ -42,7 +42,7 @@ function register(user) {
     return (dispatch) => {
         dispatch(request(user));
         
-        userService.
+        userService.regi
             .then((user) => {
                 dispatch(success(user));
                 history.push('/');
