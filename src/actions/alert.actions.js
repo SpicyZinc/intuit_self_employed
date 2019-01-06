@@ -14,6 +14,7 @@ function success(message) {
 }
 
 function error(message) {
+
 }
 
 function clear() {
