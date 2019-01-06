@@ -35,7 +35,8 @@ export class App extends React.Component {
                     
                     <Router history={history}>
                         <div>
-                            <PrivateRoute exact path='/' component={Hom}>
+                            <PrivateRoute exact path='/' component={HomePage}>
+                            
                         </div>
                     </Router>
                 </div>
