@@ -16,5 +16,5 @@ const TheApp = () => (
 );
 
 render(
-    <App />, document.getElementById('app')
+    < />, document.getElementById('app')
 );
