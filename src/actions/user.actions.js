@@ -40,7 +40,7 @@ function logout() {
 function register(user) {
     // return the promise using fetch which dispatches appropriately
     return (dispatch) => {
-        dispatch(request({}));
+        dispatch(request(user));
         
         userService.login(username, password)
             .then((user) => {
