@@ -22,6 +22,6 @@ function error(message) {
 
 function clear() {
     return {
-        typ
+        type: 
     };
 }
