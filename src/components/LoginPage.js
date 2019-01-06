@@ -34,7 +34,9 @@ export class LoginPage extends Component {
         });
         
         const {username, password} = this.state;
-        if () 
+        if () {
+            
+        }
     }
 
     render() {
