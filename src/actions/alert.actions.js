@@ -15,7 +15,7 @@ function success(message) {
 
 function error(message) {
     return {
-        type: alertConstants.SUCCES,
+        type: alertConstants.E,
         message
     };
 }
