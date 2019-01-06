@@ -50,7 +50,7 @@ export class LoginPage extends Component {
                     </div>
                     <div className="form-group">
                         <button className="btn btn-primary">Login</button>
-                        <button className="btn btn-primary">Logi</button>
+                        <button className="btn btn-primary">R</button>
                     </div>
                 </form>
             </div>
