@@ -9,7 +9,7 @@ import { configureFakeAPI } from './helpers';
 
 configureFakeAPI();
 
-const TheApp =()
+const TheApp =(
     <Provider store={store}>
         <App />
     </Provider>
