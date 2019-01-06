@@ -18,7 +18,8 @@ function login(username, password) {
             .then((user) => {
                 dispatch(success(user));
                 history.push('/');
-            });
+            })
+            .c;
     };
 
     function request(user) { return { type: userConstants.LOGIN_REQUEST, user } }
