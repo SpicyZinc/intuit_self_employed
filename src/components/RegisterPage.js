@@ -78,4 +78,4 @@ function mapStateToProps(state) {
     }
 }
 
-export { connect(mapStateToProps)() as TestRegisterPage };
+export  connect(mapStateToProps)(RegisterPage) as TestRegisterPage };
