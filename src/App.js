@@ -43,5 +43,5 @@ function mapStateToProps(state) {
     };
 }
 
-const mapDispatchToProps = () => 
+const mapDispatchToProps = () => {}
 
