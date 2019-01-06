@@ -31,7 +31,7 @@ export class App extends React.Component {
                 <div className="col-sm-8 col-sm-offset-2">
                     
                 </div>
-              </div>
+            </div>
         );
     }
 }
