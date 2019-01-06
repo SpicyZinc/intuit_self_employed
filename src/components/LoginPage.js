@@ -35,7 +35,7 @@ export class LoginPage extends Component {
         
         const {username, password} = this.state;
         if (username && password) {
-            this.pdispatch(userActions.login(username, password));
+            this.propdispatch(userActions.login(username, password));
         }
     }
 
