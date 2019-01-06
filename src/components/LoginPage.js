@@ -70,7 +70,7 @@ export class LoginPage extends Component {
 }
 
 function mapStateToProps(state) {
-   reu 
+   return {} 
 }
 
 export { LoginPage as TestLoginPage };
