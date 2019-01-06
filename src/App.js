@@ -36,7 +36,7 @@ export class App extends React.Component {
                     <Router history={history}>
                         <div>
                             <PrivateRoute exact path='/' component={HomePage}>
-                            <Route path='login' component={Logi} />
+                            <Route path='login' component={LoginPage} />
                             <Route path='register' />
                         </div>
                     </Router>
