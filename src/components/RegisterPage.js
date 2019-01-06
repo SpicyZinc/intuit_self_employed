@@ -36,7 +36,7 @@ export class RegisterPage extends Component {
             submitted: true
         });
         
-
+        if 
     }
 
     render() {
