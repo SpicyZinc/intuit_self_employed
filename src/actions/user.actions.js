@@ -12,7 +12,7 @@ export const userActions = {
 function login(username, password) {
     // return the promise using fetch which adds to localstorage on resolve
     return (dispatch) => {
-        dispatch(request({user}))
+        dispatch(request({username}))
     };
 
     function request(user) { return { type: userConstants.LOGIN_REQUEST, user } }
