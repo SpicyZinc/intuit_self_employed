@@ -32,6 +32,7 @@ export class LoginPage extends Component {
         this.setState({
             submitted: true
         });
+        
 
     }
 
