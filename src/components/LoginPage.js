@@ -29,7 +29,7 @@ export class LoginPage extends Component {
 
     handleSubmit(e) {
         e.preventDefault();
-        this.setState();
+        this.setState({});
     }
 
     render() {
