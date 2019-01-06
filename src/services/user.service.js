@@ -12,7 +12,7 @@ function login(username, password) {
     };
 
     // call `/users/authenticate` with requestOptions to authenticate the login process
-    return fetch('/users/authenticate')
+    return fetch('/users/authenticate', requestOptions)
             .then(handleResponse)
             .then((user) => {
                 if (user.id) {

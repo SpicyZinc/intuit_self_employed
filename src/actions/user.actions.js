@@ -20,7 +20,9 @@ function login(username, password) {
                 history.push('/');
             })
             .catch((error) => {
+                console.log('error');
                 dispatch(failure(error.toString()));
+                dispatch(alertActions.error(error.toString()));
             });
     };
 
@@ -38,6 +40,7 @@ function logout() {
 }
 
 function register(user) {
+    console.log(user);
     // return the promise using fetch which dispatches appropriately
     return (dispatch) => {
         dispatch(request(user));
@@ -49,6 +52,7 @@ function register(user) {
             })
             .catch((error) => {
                 dispatch(failure(error.toString()));
+                dispatch(alertActions.error(error.toString()));
             });
     };
 

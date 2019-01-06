@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 
 import { userActions } from '../actions';
 
-export class RegisterPage extends Component {
+class RegisterPage extends Component {
     constructor(props) {
         super(props);
 
@@ -22,9 +22,13 @@ export class RegisterPage extends Component {
     }
 
     handleChange(event) {
+        const { name, value } = event.target;
         // handle input change and dispatch register
         this.setState({
-            username: event.target.value
+            user: {
+                ...this.state.user,
+                [name]: value
+            }
         });
     }
 
@@ -35,9 +39,9 @@ export class RegisterPage extends Component {
         this.setState({
             submitted: true
         });
-        const {username, password} = this.state;
-        if (username && password) {
-            this.props.dispatch(userActions.register({username, password}));
+        const { user } = this.state;
+        if (user.username && user.password) {
+            this.props.dispatch(userActions.register(user));
         }
     }
 
@@ -46,17 +50,29 @@ export class RegisterPage extends Component {
         return (
             <div className="col-md-6 col-md-offset-3">
                 <h2>Register</h2>
-                <form name="form">
+                <form name="form" onSubmit={this.handleSubmit}>
                     <div className={'form-group' + (submitted && !user.username ? ' has-error' : '')}>
                         <label htmlFor="username">Username</label>
-                        <input type="text" className="form-control username" name="username" />
+                        <input
+                            type="text"
+                            className="form-control username"
+                            name="username"
+                            value={user.username}
+                            onChange={this.handleChange}
+                        />
                         {submitted && !user.username &&
                             <div className="help-block">Username is required</div>
                         }
                     </div>
                     <div className={'form-group' + (submitted && !user.password ? ' has-error' : '')}>
                         <label htmlFor="password">Password</label>
-                        <input type="password" className="form-control" name="password"/>
+                        <input
+                            type="password"
+                            className="form-control"
+                            name="password"
+                            value={user.password}
+                            onChange={this.handleChange}
+                        />
                         {submitted && !user.password &&
                             <div className="help-block">Password is required</div>
                         }
@@ -78,4 +94,7 @@ function mapStateToProps(state) {
     }
 }
 
-export default connect(mapStateToProps)(RegisterPage);
+const connectedRegisterPage = connect(mapStateToProps)(RegisterPage);
+
+export { connectedRegisterPage as RegisterPage };
+
