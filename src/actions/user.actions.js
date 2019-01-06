@@ -14,7 +14,7 @@ function login(username, password) {
     return (dispatch) => {
         dispatch(request({username}));
         
-        
+        user
     };
 
     function request(user) { return { type: userConstants.LOGIN_REQUEST, user } }
