@@ -18,7 +18,7 @@ beforeEach(function() {
           ok: true,
           Id: '12',
           json: function() {
-            return {username: 'username321'}
+            return {username: 'username321', id: 12}
           }
         });
       });

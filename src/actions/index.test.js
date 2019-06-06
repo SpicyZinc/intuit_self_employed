@@ -11,7 +11,7 @@ import {mount,shallow} from 'enzyme';
 import {spy} from 'sinon';
 import { userConstants } from '../constants';
 import { history } from '../helpers';
-import App from '../App';
+import App from '../app';
 import {store} from '../helpers/store';
 
 configure({

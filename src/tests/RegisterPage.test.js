@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import expect from 'expect';
-import { TestRegisterPage } from '../components/RegisterPage';
-import { App } from '../App';
+import { RegisterPage as TestRegisterPage } from '../components/RegisterPage';
+import { App } from '../app';
 import { configure } from 'enzyme';
 import { Link } from 'react-router-dom';
 import { MemoryRouter } from 'react-router'

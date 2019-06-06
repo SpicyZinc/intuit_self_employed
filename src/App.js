@@ -5,8 +5,9 @@ import { PrivateRoute } from './PrivateRoute.js';
 import { history } from './helpers';
 import { alertActions } from './actions';
 import { HomePage } from './components/HomePage';
-import LoginPage from './components/LoginPage';
+import { LoginPage } from './components/LoginPage';
 import { RegisterPage } from './components/RegisterPage';
+import Post from './components/Post';
 
 class App extends React.Component {
     constructor(props) {
@@ -22,7 +23,7 @@ class App extends React.Component {
         const { alert } = this.props;
         return (
             <div className="container">
-                <div className="col-sm-8 col-sm-offset-2">
+                <div className="col-sm-12 col-sm-offset-0">
                     {
                         alert.message &&
                             <div className={`alert ${alert.type}`}>{alert.message}</div>
@@ -30,9 +31,10 @@ class App extends React.Component {
                     
                     <Router history={history}>
                         <div>
-                            <PrivateRoute exact path='/' component={HomePage} />
-                            <Route path='/login' component={LoginPage} />
-                            <Route path='/register' component={RegisterPage} />
+							<PrivateRoute exact path='/' component={HomePage} />
+							<Route path='/login' component={LoginPage} />
+							<Route path='/register' component={RegisterPage} />
+							<PrivateRoute path={`/posts/:postId`} component={Post}/>
                         </div>
                     </Router>
                 </div>

@@ -1,11 +1,10 @@
 import React from 'react';
-import { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 import { userActions } from '../actions';
 
-class RegisterPage extends Component {
+class RegisterPage extends React.Component {
     constructor(props) {
         super(props);
 
@@ -68,7 +67,7 @@ class RegisterPage extends Component {
                         <label htmlFor="password">Password</label>
                         <input
                             type="password"
-                            className="form-control"
+                            className="form-control password"
                             name="password"
                             value={user.password}
                             onChange={this.handleChange}
@@ -98,3 +97,10 @@ const connectedRegisterPage = connect(mapStateToProps)(RegisterPage);
 
 export { connectedRegisterPage as RegisterPage };
 
+
+
+// const mapStateToProps = (state) => ({
+//     registration: state.registration
+// });
+
+// export default connect(mapStateToProps)(RegisterPage);

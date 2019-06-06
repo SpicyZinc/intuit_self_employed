@@ -1,28 +1,59 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
 import { Link } from 'react-router-dom';
 
-class HomePage extends Component {
+import { withStyles } from '@material-ui/core/styles';
 
+import Posts from  './Posts';
+import PostForm from './Forms/PostForm';
+
+import AlertDialog from './Forms/ConfirmModal';
+
+const styles = {
+	root: {
+		fontSize: '16px'
+	},
+};
+
+class HomePage extends Component {
     render() {
-        const { user } = this.props;
+		const {
+			user
+		} = this.props;
+
         return (
-            <div className="col-md-6 col-md-offset-3">
-                <h2 align="center">Welcome {user.username}! You have successfully logged in.</h2>
+            <div>
+                <h2 align="center">Welcome {user.username.toUpperCase()}! You have successfully logged in.</h2>
                 <p align="center">
                     <Link to="/login">Logout</Link>
                 </p>
+
+				<Posts />
+				<PostForm />
+				<AlertDialog />
+
             </div>
         );
     }
 }
 
-function mapStateToProps(state) {
-    const { user } = state.authentication;
+const StyledHomePage = withStyles(styles)(HomePage);
+
+
+const mapStateToProps = (state) => {
+	const {
+		authentication: { user },
+	} = state;
+
     return {
         user
     };
-}
+};
 
-const connectedHomePage = connect(mapStateToProps)(HomePage);
+const mapDispatchToProps = (dispatch) => 
+	bindActionCreators({
+	}, dispatch);
+
+const connectedHomePage = connect(mapStateToProps, mapDispatchToProps)(StyledHomePage);
 export { connectedHomePage as HomePage };

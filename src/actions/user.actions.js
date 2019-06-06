@@ -20,7 +20,6 @@ function login(username, password) {
                 history.push('/');
             })
             .catch((error) => {
-                console.log('error');
                 dispatch(failure(error.toString()));
                 dispatch(alertActions.error(error.toString()));
             });

@@ -36,7 +36,6 @@ class LoginPage extends Component {
         });
         
         const { username, password } = this.state;
-        console.log('login', username, password);
         if (username && password) {
             this.props.dispatch(userActions.login(username, password));
         }
@@ -70,7 +69,7 @@ class LoginPage extends Component {
                         <label htmlFor="password">Password</label>
                         <input
                             type="password"
-                            className="form-control"
+                            className="form-control password"
                             name="password"
                             value={password}
                             onChange={this.handleChange}
@@ -89,18 +88,12 @@ class LoginPage extends Component {
     }
 }
 
-// function mapStateToProps(state) {
-//     return {
-//        authentication: state.authentication
-//     }; 
-// }
+function mapStateToProps(state) {
+    return {
+       authentication: state.authentication
+    }; 
+}
 
-// const connectedLoginPage = connect(mapStateToProps)(LoginPage);
-// export { connectedLoginPage as LoginPage };
+const connectedLoginPage = connect(mapStateToProps)(LoginPage);
+export { connectedLoginPage as LoginPage };
 
-
-const mapStateToProps = (state) => ({
-    authentication: state.authentication
-});
-
-export default connect(mapStateToProps)(LoginPage);
